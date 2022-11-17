@@ -19,6 +19,50 @@
     .alert {
       margin: 0px;
     }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    button:hover,
+    a:hover {
+      opacity: 0.7;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a {
+      color: white;
+    }
   </style>
   <title>Skye</title>
 </head>
@@ -33,11 +77,41 @@
     <h1 class="display-4">Hello</h1>
     <p class="lead">A service dedicated to Hospital Admin, Doctor and Patient.</p>
     <hr class="my-4">
-    <p>Explore our Website.</p>
+    <p>This is our team.</p>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="card">
+        <img src="/static/images/admin.png" alt="John" style="width:100%">
+        <p class="title">Olaitan Pelumi Samuel</p>
+        <p>Matic No. 20/ND/COM/012</p>
+      </div>
+
+    </div>
+
+    <div class="grid-item">
+      <div class="card">
+        <img src="/static/images/doctor.png" alt="John" style="width:100%">
+        <p class="title">Kofoworade Olubisi Esther</p>
+        <p>Matic No. 20/ND/COM/125</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card">
+        <img src="/static/images/patient.jpg" alt="John" style="width:100%">
+        <p class="title">Babatunde Imoleayo Eniola</p>
+        <p>Matic No. 20/ND/COM/015</p>
+      </div>
+    </div>
+  </div>
+  <center>
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
     </p>
-  </div>
+  </center>
+
   {% include "hospital/footer.html" %}
 </body>
  
